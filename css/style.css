@@ -34,5 +34,19 @@ section {
     background-color: green;
     text-align: center;
     height: 4rem;
-    font-size: 3rem;
+    font-size: 2rem;
+}
+
+.icons-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    background-color: grey;
+    min-height: 160px;
+    max-width: 50px;
+    z-index: 1;
 }
