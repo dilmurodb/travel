@@ -45,8 +45,13 @@ section {
     position: fixed;
     top: 30%;
     left: 0;
-    background-color: grey;
+    background-color: black;
     min-height: 160px;
     max-width: 50px;
     z-index: 1;
+    border-radius: 0.5rem;
+}
+
+.icons {
+    color: white;
 }
