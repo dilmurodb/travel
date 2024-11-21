@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-unordered-list {
+    padding: 0.5rem;
+    text-align: right;
+    background-color: grey;
+}
+
+.nav-unordered-list li {
+    display: inline-block;
+    margin-inline: 0.5rem;
+}
+
+.nav-unordered-list li a {
+    text-decoration: none;
+}
+
+.nav-unordered-list li a:hover {
+    background: black;
+    color: whitesmoke
+}
