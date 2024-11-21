@@ -23,3 +23,16 @@
     background: black;
     color: whitesmoke
 }
+
+section {
+    height: 100vh;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background-color: green;
+    text-align: center;
+    height: 4rem;
+    font-size: 3rem;
+}
