@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .nav-unordered-list {
     padding: 0.5rem;
     text-align: right;
@@ -24,9 +28,9 @@
     color: whitesmoke
 }
 
-section {
-    height: 100vh;
-}
+/* section {
+    height: 200vh;
+} */
 
 .header {
     position: sticky;
@@ -45,8 +49,32 @@ section {
     position: fixed;
     top: 30%;
     left: 0;
-    background-color: grey;
+    background-color: black;
     min-height: 160px;
     max-width: 50px;
     z-index: 1;
+    border-radius: 0.5rem;
+}
+
+.icons {
+    color: white;
+}
+
+.cities-container {
+    max-width: 800px;
+    min-height: 500px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    align-content: space-evenly;
+    border: 2px solid black;
+}
+
+.cities-item {
+    margin: 1em;
+    min-width: 200px;
+    height: 200px;
+    background-color: black;
 }
