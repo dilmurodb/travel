@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .nav-unordered-list {
     padding: 0.5rem;
     text-align: right;
