@@ -64,12 +64,14 @@ html {
     max-width: 800px;
     min-height: 500px;
     margin-inline: auto;
+    /* margin-bottom: 0.5rem; */
+    padding-bottom: 1rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-flow: row wrap;
     align-content: space-evenly;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .box-item {
@@ -78,3 +80,90 @@ html {
     height: 200px;
     background-color: black;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-inline: auto;
+    gap: 1rem;
+    max-width: 800px;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 375px) {
+    .aside-grid-left {
+        display: none;
+    }
+    .aside-grid-right {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .aside-grid-left {
+        display: none;
+    }
+    .aside-grid-right {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section-grid-container {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        
+    }
+
+    .box-container {
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+    .aside-grid-left {
+        display: block;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        place-content: center;
+        background-color: lightgrey;
+    }
+    .aside-grid-left-heading {
+        display: flex;
+        justify-content: center;
+    }
+    .aside-grid-right-heading {
+        display: flex;
+        justify-content: center;
+    }
+    .aside-grid-left-ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aside-grid-right-ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aside-grid-right {
+        display: block;
+        grid-column-start: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        place-content: center;
+        background-color: lightgrey;
+    }
+    
+    .grid-container {
+    display: flex;
+    margin-inline: auto;
+    max-width: 800px;
+    margin-bottom: 1rem;
+    /* border: 1px solid black; */
+    }
+    .grid-aside {
+    display: none;
+    }
+    
+}
+
